@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar"
 import WeatherCard from "./WeatherCard"
 import WeatherResults from "./WeatherResults"
 import { cities } from "./utils/data"
+import Background from "./Background"
 
 function App() {
 	const [selectedCity, setSelectedCity] = useState("New York City")
@@ -14,15 +15,18 @@ function App() {
 		console.log("handleSearch btn clicked!")
 	}
 	return (
-		<>
-			<Header />
-			<SearchBar handleSearch={handleSearch} />
-			<WeatherResults
-				city={selectedCity}
-				forecast={cities.find((city) => city.name === selectedCity).forecast}
-			/>
-			<Footer />
-		</>
+		<div className="App">
+			<Background />
+			<div className="foreground">
+				<Header />
+				<SearchBar handleSearch={handleSearch} />
+				<WeatherResults
+					city={selectedCity}
+					forecast={cities.find((city) => city.name === selectedCity).forecast}
+				/>
+				<Footer />
+			</div>
+		</div>
 	)
 }
 

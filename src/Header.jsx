@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <h1>Weather Report</h1>
+    <h1 className="header">Weather Report</h1>
   )
 }
 

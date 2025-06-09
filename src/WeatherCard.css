@@ -3,19 +3,32 @@
     flex-direction: column;
     margin: 0 2rem 2rem;
     padding: 2rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    min-width: 140px;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    min-width: 120px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 7.5%);
+    background: rgba(51, 236, 255, 35%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .weatherCard:hover {
     transform: scale(1.1);
-    background: rgba(0, 0, 0, 2.5%);
+    background: rgba(51, 236, 255, 25%);
+}
+
+.weatherCard:active {
+    transform: scale(1);
+}
+
+.weatherCard-date {
+    font-size: 1.2em;
 }
 
 .weatherCard-icon {
     font-size: 3em;
+}
+
+.weatherCard-type {
+    font-style: italic;
 }
