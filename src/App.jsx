@@ -109,14 +109,20 @@ const cities = [
 	},
 ]
 
-
 function App() {
-  const [selectedCity, setSelectedCity] = useState('New York City')
-  return (
+	const [selectedCity, setSelectedCity] = useState("New York City")
+
+	const handleSearch = () => {
+		console.log("handleSearch btn clicked!")
+	}
+	return (
 		<>
 			<Header />
-			<SearchBar />
-      <WeatherResults city={selectedCity} forecast={cities.find((city) => city.name === selectedCity).forecast}  />
+			<SearchBar handleSearch={handleSearch} />
+			<WeatherResults
+				city={selectedCity}
+				forecast={cities.find((city) => city.name === selectedCity).forecast}
+			/>
 			<Footer />
 		</>
 	)

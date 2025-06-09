@@ -1,6 +1,11 @@
-const SearchBar = () => {
+import './SearchBar.css'
+
+const SearchBar = ({handleSearch}) => {
   return (
-    <div>SearchBar</div>
+    <div className='searchbar'>
+      <input type='text' />
+      <div onClick={handleSearch} className='searchbar-submit'>Search</div>
+    </div>
   )
 }
 
