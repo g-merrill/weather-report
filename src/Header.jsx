@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div>Weather Report</div>
+    <h1>Weather Report</h1>
   )
 }
 

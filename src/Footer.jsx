@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>© Greg Merrill via <a href="https://www.codepath.org/" target="_blank" rel="noopener noreferrer">CodePath</a></div>
   )
 }
 

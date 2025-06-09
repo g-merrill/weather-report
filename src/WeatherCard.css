@@ -1,8 +1,21 @@
 .weatherCard {
     display: flex;
     flex-direction: column;
-    margin: 0 2rem;
+    margin: 0 2rem 2rem;
     padding: 2rem;
     border: 1px solid black;
     border-radius: 10px;
+    min-width: 140px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 7.5%);
+}
+
+.weatherCard:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 2.5%);
+}
+
+.weatherCard-icon {
+    font-size: 3em;
 }

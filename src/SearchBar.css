@@ -5,8 +5,13 @@
     margin: 5rem 0;
 }
 
+.searchbar-input {
+    padding: 0.25em 0.75em;
+    width: 40%;
+}
+
 .searchbar-submit {
-    margin-left: 1rem;
+    margin-left: 0.75rem;
     cursor: pointer;
     border: 1px solid #000;
     border-radius: 5px;

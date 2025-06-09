@@ -1,4 +1,6 @@
 .forecastCtnr {
     display: flex;
     margin: 5rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
